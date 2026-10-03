@@ -1,0 +1,62 @@
+{% load static %}
+<header>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo">
+        </div>
+
+        <div class="location_box">
+            <img src="{% static 'images/location_icon.png' %}" alt="Location Icon">
+            <div>
+                <div>Delivering to Sonipat 131001</div>
+                <div><b>Update location</b></div>
+            </div>
+        </div>
+
+        <div class="dropdown_box">
+            <select name="" id="">
+                <option value="">All</option>
+                <option value="">Alexa</option>
+                <option value="">Amazon Devices</option>
+                <option value="">Amazon Fashion</option>
+                <option value="">Amazon Fresh</option>
+                <option value="">Amazon Pharmacy</option>
+                <option value="">Appliances</option>
+                <option value="">Apps & Games</option>
+                <option value="">Baby</option>
+                <option value="">Beauty & Personal Care</option>
+                <option value="">Books</option>
+                <option value="">Car & Motorbike</option>
+                <option value="">Clothing & Accessories</option>
+            </select>
+            <input type="text" placeholder="Search Amazon.in">
+            <div class="magnifying_icon">
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <select name="" id="" class="language_dropdown">
+            <option value="">🇮🇳 EN</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+        </select>
+
+        <div class="account_box">
+            <div>Hello, Sign in</div>
+            <div class="acc_list"><b>Account & Lists</b></div>
+        </div>
+
+        <div class="orders_box">
+            <div>Returns</div>
+            <div><b>& Orders</b></div>
+        </div>
+
+        <div class="cart_box">
+            <div class="cart_count"><b>0</b></div>
+            <div class="cart_text">
+                <div>🛒</div>
+                <div><a>Cart</a></div>
+            </div>
+        </div>
+ </header>

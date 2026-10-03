@@ -1,0 +1,103 @@
+.sub_navigation {
+    width: 100%;
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+}
+
+.subnav_items {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 0 20px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.all_menu {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.all_menu i {
+    font-size: 22px;
+}
+
+.Sign_in_box {
+    position: fixed;
+    top: 0;
+    left: -365px;
+    width: 365px;
+    max-width: 85vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Sign_in_box.open {
+    left: 0;
+}
+
+.icon_box {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 20px;
+    background-color: #232f3e;
+    color: white;
+    position: relative;
+}
+
+.icon_box > i {
+    font-size: 28px;
+}
+
+.icon_box p {
+    margin: 0;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.close_button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.drawer_category {
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.drawer_category h2 {
+    margin: 0 0 8px 30px;
+    font-size: 20px;
+}
+
+.drawer_subcategory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 30px;
+    font-size: 16px;
+}
+
+.drawer_subcategory i {
+    color: #999;
+    font-size: 13px;
+}

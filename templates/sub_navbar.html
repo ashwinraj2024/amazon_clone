@@ -1,0 +1,70 @@
+{% load static %}
+
+<div class="sub_navigation">
+
+    <div class="subnav_items">
+
+        <div class="all_menu" onclick="show_sidebar()">
+            <i class="fa-solid fa-bars"></i>
+            <span>All</span>
+        </div>
+
+        <div>Amazon Pay</div>
+        <div>Mobiles</div>
+        <div>Today's Deals</div>
+        <div>Coupons</div>
+        <div>Flights</div>
+        <div>Electronics</div>
+        <div>Computers</div>
+        <div>New Releases</div>
+        <div>Bestsellers</div>
+        <div>Video Games</div>
+        <div>Fashion</div>
+
+    </div>
+
+
+    <aside class="Sign_in_box" id="sign-in-drawer">
+
+        <div class="icon_box">
+
+            <i class="fa-solid fa-circle-user"></i>
+
+            <p>Hello, sign in</p>
+
+            <button class="close_button" onclick="hide_sidebar()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="drawer_content">
+
+            {% for category in categories %}
+
+            <section class="drawer_category">
+
+                <h2>{{ category.name }}</h2>
+
+                {% for subcategory in category.subcategories %}
+
+                <div class="drawer_subcategory">
+
+                    <span>{{ subcategory }}</span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </div>
+
+                {% endfor %}
+
+            </section>
+
+            {% endfor %}
+
+        </div>
+
+    </aside>
+
+</div>
